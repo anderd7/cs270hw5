@@ -2,25 +2,25 @@ Rails.application.routes.draw do
   
   #Request Method, URL, controller/action, named route
   #event routes
-  GET '/events/new' , to: 'events#new_event' , as: :new_event
-  GET '/events' , to: 'events#show_all_events' , as: :show_all_events
-  GET '/events/:id' , to: 'events#show_event' , as: :show_event
-  GET '/events/:id/edit' , to: 'events#edit_event' , as: :edit_event
-  DELETE '/events/:id' , to: 'events#delete_event' , as: :delete_event
+  get '/events/new' , to: 'events#new_event' , as: :new_event
+  get '/events' , to: 'events#show_all_events' , as: :show_all_events
+  get '/events/:id' , to: 'events#show_event' , as: :show_event
+  get '/events/:id/edit' , to: 'events#edit_event' , as: :edit_event
+  delete '/events/:id' , to: 'events#delete_event' , as: :delete_event
   
   #location routes
-  GET '/locations/new' , to: 'locations#new_location' , as: :new_location
-  GET '/locations' ,  to: 'locatons#show_all_locations' , as: :show_all_locations
-  GET '/locations/:id' , to: 'locations#show_location' , as: :show_location
-  GET '/locations/:id/edit' , to: 'locations#edit_location' , as: :edit_location
-  DELETE '/locations/:id' , to: 'locations#delete_location' , as: :delete_location
+  get '/locations/new' , to: 'locations#new_location' , as: :new_location
+  get '/locations' ,  to: 'locatons#show_all_locations' , as: :show_all_locations
+  get '/locations/:id' , to: 'locations#show_location' , as: :show_location
+  get '/locations/:id/edit' , to: 'locations#edit_location' , as: :edit_location
+  delete '/locations/:id' , to: 'locations#delete_location' , as: :delete_location
 
   #user routes
-  GET '/users/new' , to: 'users#new_user' , as: :new_user
-  GET '/users' , to: 'users#show_all_users' , as: :show_all_users
-  GET '/users/:id' , to: 'users#show_user' , as: :show_user
-  GET '/users/:id/edit' , to: 'users#edit_user' , as: :edit_user
-  DELETE '/users/:id' , to: 'users#delete_user' , as: :delete_user  
+  get '/users/new' , to: 'users#new_user' , as: :new_user
+  get '/users' , to: 'users#show_all_users' , as: :show_all_users
+  get '/users/:id' , to: 'users#show_user' , as: :show_user
+  get '/users/:id/edit' , to: 'users#edit_user' , as: :edit_user
+  delete '/users/:id' , to: 'users#delete_user' , as: :delete_user  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
